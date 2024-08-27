@@ -1,0 +1,11 @@
+services:
+  db:
+    container_name: learn-hibernate
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: admin
+      POSTGRES_USER: my_admin
+      POSTGRES_DB: example_db
+    ports:
+      - '5432:5432'
